@@ -16,11 +16,15 @@ Demo
 
 You have to call just one static method, it will do print job on your behalf.
 
-`await Printer.ShowPrintUIAsync(PrintPreview, MyTextBox, Guid.NewGuid().ToString());`
+`````
+await Printer.ShowPrintUIAsync(PrintPreview, MyTextBox, Guid.NewGuid().ToString());
+`````
 
-PrintPreview is a canvas, which is mandatory to show print preview in device charm. You have to declare <Canvas /> in your XAML.
-MyTextBox is a text box object, whose text content is going to be printed.
-Guid.NewGuid().ToString() is a file name for printing the document. (It will be applied if you are creating PDF or XPS file via printing.)
+- PrintPreview is a canvas, which is mandatory to show print preview in device charm. You have to declare <Canvas /> in your XAML.
+
+- MyTextBox is a text box object, whose text content is going to be printed.
+
+- Guid.NewGuid().ToString() is a file name for printing the document. (It will be applied if you are creating PDF or XPS file via printing.)
 
 You can find NuGet package [here](https://www.nuget.org/packages/WinRT.TextboxPrintHelper/)
 
